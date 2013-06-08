@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "config": {
+        "process-timeout": 3600
+    },
+    "require": {
+        "php": ">=5.3.0",
+
+        "elfet/silicone": "*"
+    },
+    "minimum-stability": "dev"
+}
