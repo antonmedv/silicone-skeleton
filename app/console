@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+//read http://symfony.com/doc/current/book/installation.html#configuration-and-setup
+//umask(0000);
+set_time_limit(0);
+
+require_once __DIR__ . '/bootstrap.php';
+
+$app = new Application();
+$app->boot();
+
+$console = new Symfony\Component\Console\Application('Console Tool', '1.0');
+$commands = $app['console'];
+$commands($console);
+$console->run();

@@ -3,6 +3,8 @@ Silicone Skeleton
 
 Silicone Skeleton is Silex Framework Edition Skeleton.
 
+
+
 Install
 -------
 
@@ -14,4 +16,10 @@ Example:
 sudo chmod +a "www-data allow delete,write,append,file_inherit,directory_inherit" app/open/
 sudo chmod +a "[your user name] allow delete,write,append,file_inherit,directory_inherit" app/open/
 ```
+
+TODO
+----
+* Documentation
+* Tests
+* SwiftMailer
 
