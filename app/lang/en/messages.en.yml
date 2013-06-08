@@ -1,0 +1,13 @@
+title: Silicone Skeleton
+hello.world: Hello Wolrd!
+
+form:
+  name: Name
+  email: E-Mail
+  password: Password
+  password_confirmation: Repeat password
+  remember_me: Remember me
+
+register: Register
+login: Login
+logout: Logout

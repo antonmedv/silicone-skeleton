@@ -4,12 +4,15 @@ class Application extends Silicone\Application
 {
     protected function configure()
     {
-        $this['router.resource'] = array(
-            $this->getRootDir() . '/src/Controller/',
-        );
+        $app = $this;
+        require_once $app->getRootDir() . '/config/dev.php';
+    }
 
-        $this['twig.path'] = array(
-            $this->getRootDir() . '/view/',
-        );
+    /**
+     * @return \Doctrine\ORM\EntityManager
+     */
+    public function entityManager()
+    {
+        return $this['em'];
     }
 }

@@ -1,0 +1,7 @@
+user:
+  name:
+    already_used: Name already used.
+  email:
+    already_used: Email already used.
+  password:
+    mismatch: Password mismatch.

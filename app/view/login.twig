@@ -1,0 +1,27 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    {% if error is not empty %}
+        <div>
+            {{ error|trans({}, 'security') }}
+        </div>
+    {% endif %}
+
+    <form class="form" action="{{ path('login_check') }}" method="POST">
+
+        <label for="_username">{{ 'form.name'|trans({}) }}</label>
+        <input type="text" name="_username" value="{{ last_username }}">
+
+
+        <label for="_password">{{ 'form.password'|trans() }}</label>
+        <input type="password" name="_password">
+
+
+        <input type="checkbox" id="remember_me" name="_remember_me" checked/>
+        <label for="remember_me">{{ 'form.remember_me'|trans() }}</label>
+
+
+        <button type="submit">{{ 'login'|trans() }}</button>
+        <a href="{{ url('register') }}">{{ 'register'|trans() }}</a>
+    </form>
+{% endblock %}
