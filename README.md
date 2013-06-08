@@ -39,14 +39,14 @@ Controller
 ----------
 You can use Silex controllers `$app->get(...)` with class controllers.
 ```php
-class Index extends Controller
+class Blog extends Controller
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/blog/{post}")
      */
-    public function index()
+    public function post($post)
     {
-        return $this->render('index.twig');
+        return $this->render('post.twig');
     }
 }
 ```
@@ -54,7 +54,7 @@ class Index extends Controller
 Doctrine Orm
 ------------
 You can use all Doctrine ORM functionality, not just DBAL. Create file in app/src/Entity/Post.php
-```
+```php
 namespace Entity;
 
 use Doctrine\ORM\Mapping as ORM;
