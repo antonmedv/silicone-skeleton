@@ -1,10 +1,4 @@
 <?php
-/* (c) Anton Medvedev <anton@elfet.ru>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace Controller;
 
 use Silicone\Route;
@@ -53,13 +47,5 @@ class Auth extends Controller
         ));
         $response->setSharedMaxAge(5);
         return $response;
-    }
-
-    /**
-     * @Route("/success", name="register_success")
-     */
-    public function success()
-    {
-        return $this->render('users/register/success.twig');
     }
 }
