@@ -17,6 +17,7 @@ This Silex modification contain next:
 * Security
 * User Registration and Authorization.
 * Annotation Routes
+* WebProfiler
 * Console
 
 Structure
