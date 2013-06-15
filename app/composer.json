@@ -10,6 +10,7 @@
     "require": {
         "php": ">=5.3.0",
 
-        "elfet/silicone": "*"
+        "elfet/silicone": "*",
+        "silex/web-profiler": "1.0.*@dev"
     }
 }
