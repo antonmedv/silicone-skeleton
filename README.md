@@ -17,7 +17,7 @@ This Silex modification contain next:
 * Security
 * User Registration and Authorization.
 * Annotation Routes
-* WebProfiler
+* WebProfiler (with Doctrine queries logger)
 * Console
 
 Structure
