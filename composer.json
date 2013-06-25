@@ -1,11 +1,12 @@
 {
     "autoload": {
         "psr-0": {
-            "": "src/"
+            "": "app/src/"
         }
     },
     "config": {
-        "process-timeout": 3600
+        "process-timeout": 3600,
+        "vendor-dir": "app/vendor/"
     },
     "require": {
         "php": ">=5.3.0",
