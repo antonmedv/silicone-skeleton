@@ -1,4 +1,12 @@
 {
+    "name": "elfet/silicone-skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elfet",
+            "email": "anton@elfet.ru"
+        }
+    ],
     "autoload": {
         "psr-0": {
             "": "app/src/"
