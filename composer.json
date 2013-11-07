@@ -19,7 +19,7 @@
     "require": {
         "php": ">=5.3.0",
 
-        "elfet/silicone": "dev-master@dev",
+        "elfet/silicone": "~1.0",
 
         "silex/silex": "~1.0",
         "silex/web-profiler": "1.0.*@dev",
