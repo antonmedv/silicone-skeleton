@@ -5,12 +5,12 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-use Silicone\Validator\Constraints\UniqueEntity;
+use Validator\Unique;
 
 /**
  * @ORM\Entity
- * @UniqueEntity(fields="username", message="user.name.already_used", groups={"Registration"})
- * @UniqueEntity(fields="email", message="user.email.already_used", groups={"Registration"})
+ * @Unique(fields="username", message="user.name.already_used", groups={"Registration"})
+ * @Unique(fields="email", message="user.email.already_used", groups={"Registration"})
  */
 class User implements UserInterface
 {

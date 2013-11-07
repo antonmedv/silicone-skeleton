@@ -3,6 +3,8 @@ Silicone Skeleton
 
 Silicone Skeleton is Silex Framework Edition Skeleton.
 
+Every part is configurable. You can choose anything you want.
+
 This Silex modification contain next:
 * HttpCache
 * Class Controllers
@@ -12,7 +14,8 @@ This Silex modification contain next:
 * Session
 * Twig
 * Translation
-* Validator (with UniqueEntityValidator for Doctrine Orm)
+* Validator
+  * Unique validator for entities
 * Forms
 * Security
 * User Registration and Authorization.
@@ -52,7 +55,7 @@ class Blog extends Controller
 }
 ```
 
-Doctrine Orm
+Doctrine ORM
 ------------
 You can use all Doctrine ORM functionality, not just DBAL. Create file in app/src/Entity/Post.php
 ```php
