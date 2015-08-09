@@ -5,7 +5,7 @@ Silicone Skeleton is Silex Framework Edition Skeleton.
 
 Every part is configurable. You can choose anything you want.
 
-This Silex modification contain next:
+This Silex modification contains the following:
 * HttpCache
 * Class Controllers
 * Doctrine Common
@@ -25,12 +25,12 @@ This Silex modification contain next:
 
 Structure
 ---------
-Structure of Silicone very like Symfony.
+Structure of Silicone is very similar to Symfony's.
 ```
 app/
     config/  -- Configuration
     lang/    -- Language Yml, Xliff files
-    open/    -- Writeable directory for caches, logs, ext.
+    open/    -- Writable directory for caches, logs, ext.
     src/     -- Application sources
     vendor/  -- Vendors
     view/    -- Twig view files
@@ -57,7 +57,7 @@ class Blog extends Controller
 
 Doctrine ORM
 ------------
-You can use all Doctrine ORM functionality, not just DBAL. Create file in app/src/Entity/Post.php
+You can use all Doctrine ORM functionality, not just DBAL. Create file `app/src/Entity/Post.php`:
 ```php
 namespace Entity;
 
@@ -85,7 +85,7 @@ class Post
 }
 ```
 
-After this simple run next command:
+After this just run:
 ```
 app/console schema:update
 ```
@@ -93,12 +93,12 @@ app/console schema:update
 Install
 -------
 
-Use Composer to create new project.
+Use Composer to create a new project:
 ```
 composer create-project elfet/silicone-skeleton your/app/path
 ```
 
-Open directory using for writing caches, logs, ext. So you must give write permissions to write for www-data user.
+Open directory used for writing caches, logs, ext. So you must give write permissions for www-data user.
 Example:
 ```
 sudo chmod +a "www-data allow delete,write,append,file_inherit,directory_inherit" app/open/
@@ -113,7 +113,7 @@ chmod +x app/console
 
 Database
 --------
-After configuring console run next commands to create example database.
+After configuring console run the following commands to create sample database:
 ```
 app/console database:create
 app/console schema:create
