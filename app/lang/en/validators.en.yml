@@ -1,7 +1,7 @@
 user:
   name:
-    already_used: Name already used.
+    already_used: Name is already taken.
   email:
-    already_used: Email already used.
+    already_used: Email is already taken.
   password:
-    mismatch: Password mismatch.
+    mismatch: The passwords do not match.
